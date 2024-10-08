@@ -1,0 +1,674 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  padding: 20px 40px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.Auth {
+  padding: 20px 10px;
+  position: absolute;
+  background-color: #8b5e3c;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  top: 37px;
+  right: 10px;
+  transition: 1s all;
+}
+.Auth a {
+  color: #fff;
+  font-size: 15px;
+}
+
+.iconUser:hover + .Auth,
+.Auth:hover {
+  transition: 1s all;
+
+  display: flex;
+}
+header .menu {
+  display: none;
+}
+header a {
+  font-weight: 600;
+  font-size: 25px;
+  color: #000000;
+}
+header ul {
+  display: flex;
+  gap: 30px;
+}
+header ul li a {
+  color: black;
+  font-weight: 500;
+}
+header .search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .icon i {
+  margin-right: 10px;
+  padding: 10px;
+
+  border-radius: 50%;
+}
+header .icon i:hover {
+  background-color: #8b5e3c;
+  color: #fff;
+  transition: 1s all;
+}
+header .search .inputForm {
+  position: relative;
+}
+header .search .inputForm input {
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  transition: 1s width;
+}
+header .search .inputForm input:focus {
+  width: 250px;
+}
+
+/* End Header */
+main {
+  display: flex;
+  align-items: center;
+}
+main .imgMain {
+  width: 600px;
+}
+main .form {
+  margin-left: 40px;
+  padding: 20px 30px;
+}
+main .form h3 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+main .form p {
+  font-weight: 400;
+  font-weight: 20px;
+}
+
+main .Login {
+  margin: 10px 0;
+  width: 400px;
+}
+main .Login input {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+main .route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .route .btn {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #8b5e3c;
+  border-radius: 5px;
+  transition: 1s all;
+}
+main .route .signup {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+main .route p {
+  display: inline;
+}
+
+main .route .signup .imgLogin {
+  width: 20px;
+}
+
+main .route a {
+  color: #8b5e3c;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+
+  background-color: #000000;
+  flex-wrap: wrap;
+  color: #fff;
+  padding: 30px 30px;
+}
+
+footer .listfooter h4 {
+  font-size: 15px;
+}
+footer .listfooter p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+footer .listfooter span {
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: rgba(128, 128, 128, 0.742);
+}
+footer .listfooter .footerInput {
+  position: relative;
+  margin-top: 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+}
+footer .listfooter .footerInput input {
+  padding: 8px 10px;
+  color: #f5f5f5;
+  background-color: transparent;
+  width: 90%;
+  outline: none;
+  border: none;
+}
+footer .listfooter .footerInput .icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+footer .listfooter ul li {
+  margin: 10px 0;
+  font-size: 15px;
+  transition: 1s all;
+  cursor: pointer;
+}
+footer .listfooter ul li:hover {
+  color: #8b5e3c;
+  transform: translateX(5px);
+}
+footer .listfooter .download {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Home Page */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  gap: 30px;
+}
+.banner .ImageBanner {
+  flex-grow: 4;
+}
+.banner .nameCatocry {
+  margin-right: 40px;
+  border-right: 1px solid #0000008a;
+  width: 250px;
+}
+.banner .nameCatocry ul li {
+  margin-bottom: 10px;
+}
+.banner .ImageBanner img {
+  width: 100%;
+}
+
+.Prodcut {
+  padding: 20px 30px;
+  text-align: center;
+  margin: 50px 0;
+}
+.catogry {
+  padding: 20px 30px;
+  margin: 50px 0;
+}
+.Prodcut .element,
+.catogry .element {
+  display: flex;
+  align-items: safe;
+}
+.Prodcut .dayOffer,
+.catogry .dayOffer {
+  text-align: start;
+  font-size: 25px;
+  color: #8b5e3c;
+  position: relative;
+  font-weight: 500;
+}
+.Prodcut .dayOffer::before,
+.catogry .dayOffer::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #8b5e3c;
+  left: -10px;
+}
+.Prodcut .titleSales {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.Prodcut .sales {
+  display: flex;
+}
+.Prodcut .sales .typeTime {
+  font-weight: 900;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.Prodcut .sales .typeTime .type {
+  position: absolute;
+  top: -30px;
+  font-weight: 400;
+}
+.Prodcut .sales .typeTime .changeColor {
+  color: #8b5e3c;
+}
+
+.productsCard {
+  margin: 50px 0;
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  width: 100%;
+}
+.productsCard::-webkit-scrollbar {
+  width: 2px !important; /* Width of the scrollbar */
+}
+
+.productsCard::-webkit-scrollbar-track {
+  background: #fff; /* Thumb color */
+}
+
+.productsCard::-webkit-scrollbar-thumb {
+  background: #8b5e3c; /* Thumb color */
+  border-radius: 5px; /* Round the corners */
+}
+
+.productsCard .cardPro {
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.productsCard .cardPro .imgCard {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+
+  overflow: hidden;
+}
+.productsCard .cardPro .imgCard img {
+  height: 150px;
+  object-fit: cover;
+}
+.productsCard .cardPro .imgCard .offer {
+  background-color: #8b5e3c;
+  padding: 6px 5px;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+.productsCard .cardPro .imgCard .buy {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 15px 10px;
+  top: 10px;
+  right: -50px;
+  transition: 1s all;
+}
+.productsCard .cardPro .imgCard .buy i {
+  color: #000000;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.productsCard .cardPro:hover .buy {
+  right: 6px;
+}
+.productsCard .cardPro .text {
+  text-align: start;
+  padding: 20px 10px;
+}
+
+.productsCard .cardPro .text h3 {
+  font-weight: 500;
+  margin: 5px 0;
+}
+.productsCard .cardPro .text .price {
+  font-weight: 500;
+  color: #db4444;
+  margin: 5px 0;
+}
+
+.productsCard .cardPro .text .disCound {
+  color: #0000008a;
+  margin-left: 20px;
+}
+.productsCard .cardPro .rateing i {
+  margin-top: 10px;
+  margin-right: 10px;
+  color: yellow;
+}
+
+.Prodcut .btnView {
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #8b5e3c;
+  color: #f5f5f5;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.catogry .titleCatogry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 40px 20px 0;
+}
+.catogry .titleCatogry .arrow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 20px 10px;
+}
+.catogry .titleCatogry .arrow i {
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+.catogry .catogryCard {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.catogry .catogryCard .card {
+  width: 170px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 20px 20px;
+
+  flex-direction: column;
+  gap: 20px;
+}
+/* Home Page */
+
+/* User Page */
+
+.titleUer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: safe;
+  padding: 10px 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.titleUer h3 a {
+  color: #0000008a;
+  font-weight: 400;
+}
+.titleUer h3 {
+  font-weight: 500;
+}
+.titleUer p > span {
+  color: #8b5e3c;
+  font-weight: 600;
+}
+.Setting {
+  display: flex;
+  justify-content: space-around;
+}
+.Setting .optionSetting {
+  padding: 10px 30px;
+  margin-right: 20px;
+}
+.optionSetting ul {
+  padding: 10px 30px;
+}
+.optionSetting ul li {
+  padding: 10px 30px;
+  font-weight: 600;
+  transition: 1s all;
+}
+.optionSetting ul li:hover {
+ color: #8b5e3c;
+}
+.Setting .fromSetting {
+  padding: 50px 20px;
+
+  flex-grow: 2;
+}
+.Setting .fromSetting  form{
+  padding: 20px 30px;
+
+  width: 100%;
+}
+
+.Setting .fromSetting  form .InfoName{
+   display: flex;
+   width: 100%;
+}
+.Setting .fromSetting  form .name{
+  margin: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.Setting .fromSetting  form .password{
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.Setting .fromSetting  form .name label{
+  font-size: 15px;
+}
+.Setting .fromSetting  form .name input,
+.Setting .fromSetting  form .password input{
+  
+  width: 100%;
+  background-color: #F5F5F5  ;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding:  25px;
+  outline: none;
+  font-size: 20px;
+   
+}
+.btns {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.btns .btn{
+  padding: 20px 20px;
+  align-items: flex-end;
+  border: none;
+  background-color: transparent;
+}
+.btns .save{
+  background-color: #8b5e3c;
+  color: #fff;
+}
+/* Responsive Media */
+@media (max-width: 1100px) {
+  main .form {
+    margin-left: 20px;
+    padding: 20px 30px;
+  }
+  main .imgMain {
+    width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+  main .imgMain {
+    width: 90% !important;
+  }
+  header ul {
+    display: none;
+  }
+  header .menu {
+    display: block;
+  }
+
+  .Setting .optionSetting {
+    display: none;
+  }
+  main .form {
+    margin: 10px 0;
+    width: 90% !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer .listfooter {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  /* home page */
+  .banner .nameCatocry {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  header .search .inputForm {
+    display: none;
+  }
+  .InfoName{
+    flex-direction: column;
+  }
+  .Setting .fromSetting  form .name{
+    width: 90%;
+  }
+  .Setting .fromSetting  form .name,
+  .Setting .fromSetting  form .password
+  {
+    width: 90%;
+  }
+  main .form h3 {
+    font-weight: 500;
+    font-size: 25px;
+  }
+  footer .listfooter {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .banner {
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .Prodcut .titleSales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .catogry .titleCatogry h3 {
+    font-size: 15px;
+  }
+  .catogry .titleCatogry {
+    margin: 10px;
+  }
+  .Setting .fromSetting  form{
+    padding: 20px 10px;
+  
+    width: 100%;
+  }
+  .Prodcut,
+  .catogry {
+    padding: 20px 10px;
+  }
+
+  .catogry .catogryCard .card {
+    width: 70%;
+    margin: 10px;
+  }
+  .Prodcut .sales .typeTime {
+    font-weight: 300;
+    margin-left: 40px;
+  }
+  .Prodcut .titleSales h3 {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 400px) {
+  header .icon i {
+    margin-right: 5px;
+  }
+
+  header h2 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  header {
+    padding: 20px 15px;
+  }
+
+  main .Login {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
